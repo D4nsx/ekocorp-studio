@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Ekocorp Studio</title>
+<meta name="description" content="Ekocorp Studio: programa personal de producción de vídeos.">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 200 200'%3E%3Crect width='200' height='200' rx='46' fill='%23ff3d2e'/%3E%3Cpath transform='translate(57 55) scale(.9)' fill='%23f4f2ed' d='M0 0H96L82.3 21H0Z M0 39.5H72V60.5H0Z M0 79H82.3L96 100H0Z'/%3E%3C/svg%3E">
+<style>
+  :root { --fondo: #08080a; --tarjeta: #111114; --texto: #f4f2ed; --tenue: #a4a4ae; --borde: rgb(255 255 255 / .09); --rojo: #ff3d2e; }
+  * { box-sizing: border-box; }
+  body { margin: 0; min-height: 100vh; display: grid; place-items: center; padding: 24px 16px; background: var(--fondo); color: var(--texto);
+    font: 16px/1.6 "Segoe UI", system-ui, -apple-system, Roboto, Arial, sans-serif; }
+  main { width: min(640px, 100%); display: flex; flex-direction: column; gap: 22px; }
+  .marca { display: flex; align-items: center; gap: 14px; }
+  .marca svg { width: 52px; height: 52px; flex: none; }
+  h1 { margin: 0; font-size: 28px; letter-spacing: .01em; }
+  h1 span { color: var(--rojo); }
+  .tarjeta { padding: 22px 24px; border: 1px solid var(--borde); border-radius: 16px; background: var(--tarjeta); }
+  p { margin: 0 0 12px; color: var(--tenue); }
+  p:last-child { margin-bottom: 0; }
+  a { color: var(--rojo); }
+  footer { font-size: 13px; color: var(--tenue); }
+</style>
+</head>
+<body>
+<main>
+  <div class="marca">
+    <svg viewBox="0 0 200 200" aria-hidden="true"><rect width="200" height="200" rx="46" fill="#ff3d2e"/>
+      <path transform="translate(57 55) scale(.9)" fill="#f4f2ed" d="M0 0H96L82.3 21H0Z M0 39.5H72V60.5H0Z M0 79H82.3L96 100H0Z"/></svg>
+    <h1>Ekocorp Studio<span>.</span></h1>
+  </div>
+  <section class="tarjeta">
+    <p>Ekocorp Studio es un programa <strong>personal</strong> de producción de vídeos que funciona en el ordenador de su autor.
+      No es un servicio público ni tiene usuarios externos.</p>
+    <p>Usa la API de Google Drive únicamente para guardar <strong>copias de seguridad del propio programa</strong> en la cuenta de
+      Google Drive de su autor. Solo puede ver y modificar los archivos que él mismo crea en esa cuenta (permiso
+      <code>drive.file</code>); no accede al resto de archivos del Drive.</p>
+    <p><a href="privacidad.html">Política de privacidad</a></p>
+  </section>
+  <footer>© Ekocorp Studio</footer>
+</main>
+</body>
+</html>
